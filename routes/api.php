@@ -21,4 +21,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('google/calendar/events/webhook', [GoogleOAuthController::class, 'handleWebhook'])->name('calendar.events.handle.webhook');
 Route::post('triggerConfirmAppointment', [TriggerAppointmentController::class, 'triggerConfirmAppointment'])->name('triggerConfirmAppointment');
-Route::get('triggerCancelAppointment', [TriggerAppointmentController::class, 'triggerCancelAppointment'])->name('triggerCancelAppointment');
+Route::post('triggerCancelAppointment', [TriggerAppointmentController::class, 'triggerCancelAppointment'])->name('triggerCancelAppointment');
