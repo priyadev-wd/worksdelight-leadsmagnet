@@ -686,7 +686,7 @@ class GoogleOAuthController extends Controller
                 'endTime' => $this->convertToClientCalemderTimezone($endTime),
                 'title' => $appointment['summary'],
                 'meetingLocationType' => 'default',
-                'appointmentStatus' => 'confirmed',
+                'appointmentStatus' => 'new',
                 'assignedUserId' => env('ASSIGNED_USER_ID'),
                 'address' => 'Google Calender',
                 'ignoreDateRange' => true,
